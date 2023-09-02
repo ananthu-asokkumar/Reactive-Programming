@@ -1,5 +1,6 @@
 package com.rp.sec01;
 
+import com.rp.sec01.courseutil.Util;
 import reactor.core.publisher.Mono;
 
 public class Lec03MonoSubscribe {
@@ -15,9 +16,9 @@ public class Lec03MonoSubscribe {
 
         //2
         mono.subscribe(
-             item-> System.out.println(item),
-             err-> System.out.println(err.getMessage()),
-             ()->System.out.println("Completed")
+                 Util.onNext(),
+                 Util.onError(),
+                 Util.onComplete()
         );
 
     }
