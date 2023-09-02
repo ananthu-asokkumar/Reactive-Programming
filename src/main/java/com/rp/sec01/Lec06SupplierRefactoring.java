@@ -2,16 +2,19 @@ package com.rp.sec01;
 
 import com.rp.sec01.courseutil.Util;
 import reactor.core.publisher.Mono;
+import reactor.core.scheduler.Schedulers;
 
 public class Lec06SupplierRefactoring {
 
     public static void main(String[] args) {
 
-        getName().subscribe(
+        getName()
+                .subscribeOn(Schedulers.boundedElastic()) //async behaviour
+                .subscribe(
                 Util.onNext()
         );
 
-        //lazy execution
+        //lazy execution of subscription
         getName().subscribe(
                 Util.onNext()
         );
