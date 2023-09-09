@@ -1,6 +1,6 @@
 package com.rp.sec01;
 
-import com.rp.sec01.courseutil.Util;
+import com.rp.courseutil.Util;
 import reactor.core.publisher.Mono;
 
 import java.util.concurrent.CompletableFuture;

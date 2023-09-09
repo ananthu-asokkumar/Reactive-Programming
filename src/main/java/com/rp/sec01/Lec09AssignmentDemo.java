@@ -1,7 +1,7 @@
 package com.rp.sec01;
 
 import com.rp.sec01.assignment.FileService;
-import com.rp.sec01.courseutil.Util;
+import com.rp.courseutil.Util;
 
 public class Lec09AssignmentDemo {
     public static void main(String[] args) {

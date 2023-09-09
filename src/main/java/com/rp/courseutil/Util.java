@@ -1,4 +1,4 @@
-package com.rp.sec01.courseutil;
+package com.rp.courseutil;
 
 import com.github.javafaker.Faker;
 
