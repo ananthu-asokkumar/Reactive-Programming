@@ -11,7 +11,7 @@ public class Lec01FluxIntro{
 
         Flux<Object> flux = Flux.just(1,2,3,"a", Util.faker().name().firstName());
 
-//        Flux<Integer> flux=Flux.empty(); // nothing to emit , so onComplete will be callued directly
+//        Flux<Integer> flux=Flux.empty(); // nothing to emit , so onComplete will be called directly
         flux.subscribe(
                 onNext(),
                 onError(),
